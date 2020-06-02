@@ -1,6 +1,7 @@
 package HuffManCoderTests;
 
 
+import huffman_code.HuffmanCoder;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -16,6 +17,9 @@ public class HuffmanCoderTests {
 
     }
 
+    /*
+    * HUFFMANTREE TESTS: STARTS
+    */
     @Test
     public void isEmpty_HuffmanTree() {
         var huffy = new HuffmanTree();
@@ -54,5 +58,25 @@ public class HuffmanCoderTests {
 
         assertNotNull(huffmanNode);
     }
+
+    @Test
+    public void checkHuffmanNode_Frequency(){
+
+    }
+    /*
+    *HUFFMANTREE TESTS: ENDS
+    */
+
+    /*
+    *HUFFMAN CODER TESTS: STARTS
+    */
+    public void checkHuffmanCoder_ObjectInstantiation_Success(){
+        HuffmanCoder huffmanCoder = new HuffmanCoder();
+
+        assertNotNull(huffmanCoder);
+    }
+    /*
+    *HUFFMAN CODER TESTS: ENDS
+    */
 
     }

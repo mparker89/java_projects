@@ -7,5 +7,6 @@ public interface IHuffman {
     String encodedHuffmanText(String encodedText);
     void viewHuffmanCodeMapping(String huffmanMapping);
     String decodedHuffmanText(String decodedText);
-    String spaceInfo(String originalText, String encodedText);
+    double spaceInfo(String originalText);
+
 }
